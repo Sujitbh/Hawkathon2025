@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9fafb;
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background: #fff;
+    height: 100vh;
+    padding: 16px 20px 20px 20px;
+    border-right: 1px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar h2 {
+    color: #7b3fe4;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 36px;
+  }
+  
+  .sidebar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 10px 12px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    transition: background 0.3s;
+  }
+  
+  .sidebar ul li a {
+    color: #111827;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+  }
+  
+  .sidebar ul li:hover,
+  .sidebar .active {
+    background-color: #f3e8ff;
+  }
+  
+  .sidebar ul li:hover a,
+  .sidebar .active a {
+    color: #7b3fe4;
+  }
+  
+  .sidebar .alert {
+    background-color: #ef4444;
+    color: white;
+    font-size: 12px;
+    border-radius: 9999px;
+    padding: 2px 6px;
+  }
+  
+  .user-info {
+    font-size: 14px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    color: #6b7280;
+    margin-top: auto;
+  }
+  
+  .main {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+  }
+  
+  .layout {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .content {
+    flex: 3;
+  }
+  
+  .side-panel {
+    flex: 1;
+  }
+  
+  .post-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 25px;
+  }
+  
+  .post-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    outline: none;
+  }
+  
+  .post-button {
+    background: #7b3fe4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+  
+  .post-button:hover {
+    background: #5c2dcf;
+  }
+  
+  #feed {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .feed-post {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .tags span {
+    background: #f3f4f6;
+    padding: 6px 12px;
+    border-radius: 9999px;
+    margin-right: 8px;
+    font-size: 13px;
+    color: #4b5563;
+  }
+  
+  .post-actions {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  .trending,
+  .events {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    margin-top: 25px;
+  }
+  
+  .trending h4,
+  .events h4 {
+    margin-bottom: 10px;
+    color: #111827;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .trending ul {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.8;
+  }
+  
+  .trending a {
+    color: #7b3fe4;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .trending a:hover {
+    text-decoration: underline;
+  }
+  
+  .comment-section {
+    margin-top: 12px;
+  }
+  
+  .comment-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  .comment {
+    background: #f3f4f6;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #374151;
+    margin-top: 6px;
+  }
+
+  .side-panel {
+    flex: 1;
+  }
+  
+  .trending, .events {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 20px;
+  }
+  
+  .trending h4, .events h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #111827;
+    font-weight: 700;
+  }
+  
+  .trending ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #374151;
+    line-height: 1.6;
+  }
+  
+  .trending a {
+    font-size: 14px;
+    color: #7b3fe4;
+    text-decoration: none;
+  }
+  
+  .trending a:hover {
+    text-decoration: underline;
+  }
+  
+  .events p {
+    font-size: 14px;
+    color: #111827;
+    line-height: 1.6;
+  }
+  
+  
+  
+  
